@@ -35,6 +35,11 @@ After parameter tuning and training the Random Forest Classifier, the model achi
 
 For serving the data and storing the transformed tweets, MariaDB is utilized. Since the project deals with structured small data, MariaDB offers a reliable and efficient solution. The transformed tweets are pushed into predefined tables, enabling easy retrieval and analysis.
 
+In the following figure you see the most used words for fake and true covid news:
+
+<img width="617" alt="Results" src="https://github.com/ThomasTruyts/Twitter-segmentation-analysis/assets/104683599/4db21859-54db-4662-91dd-d5b4c549c5ac">
+
+
 ## Further Improvements
 
 To enhance the model's performance and capabilities, the following steps can be considered:
