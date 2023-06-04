@@ -1,6 +1,9 @@
 # Fake News Detection in Tweets
 
-This project focuses on the segmentation of tweets to determine whether a tweet contains fake news or not. By training a model using SparkML on pre-labeled CSV data stored in Hadoop, we aim to classify incoming tweets in real-time. The project utilizes Apache Spark and Kafka for tweet ingestion and consumption, and MariaDB for serving the transformed data. The Kappa architecture is used for this project: <img width="669" alt="Kappa" src="https://github.com/ThomasTruyts/Twitter-segmentation-analysis/assets/104683599/2bcf3a81-4190-4d86-8556-df862bd739ab">
+This project focuses on the segmentation of tweets to determine whether a tweet contains fake news or not. By training a model using SparkML on pre-labeled CSV data stored in Hadoop, we aim to classify incoming tweets in real-time. The project utilizes Apache Spark and Kafka for tweet ingestion and consumption, and MariaDB for serving the transformed data. The Kappa architecture is used for this project:
+
+
+<img width="669" alt="Kappa" src="https://github.com/ThomasTruyts/Twitter-segmentation-analysis/assets/104683599/2bcf3a81-4190-4d86-8556-df862bd739ab">
 
 
 
