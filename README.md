@@ -1,10 +1,11 @@
 # Fake News Detection in Tweets
 
-This project focuses on the segmentation of tweets to determine whether a tweet contains fake news or not. By training a model using SparkML on pre-labeled CSV data stored in Hadoop, we aim to classify incoming tweets in real-time. The project utilizes Apache Spark and Kafka for tweet ingestion and consumption, and MariaDB for serving the transformed data.
+This project focuses on the segmentation of tweets to determine whether a tweet contains fake news or not. By training a model using SparkML on pre-labeled CSV data stored in Hadoop, we aim to classify incoming tweets in real-time. The project utilizes Apache Spark and Kafka for tweet ingestion and consumption, and MariaDB for serving the transformed data. The Kappa architecture is used for this project: ![Kappa Architecture](/Users/thomastruyts/Downloads/Results.png)
+
 
 ## Dataset Description
 
-The dataset used for training the model consists of pre-labeled tweets stored in a CSV file format. The tweets are classified as either containing fake news or being legitimate. The dataset is stored in Hadoop, allowing for distributed processing with Spark.
+The dataset used for training the model consists of pre-labeled tweets stored in a CSV file format. The tweets are classified as either containing fake news or being legitimate. The dataset is stored in Hadoop, allowing for distributed processing with Spark. 
 
 ## Machine Learning Model
 
@@ -48,4 +49,40 @@ To enhance the model's performance and capabilities, the following steps can be 
 
 ## Requirements
 
-To run the Jupyter Notebook and reproduce the results, ensure the
+To run the Jupyter Notebook and reproduce the results, ensure the following dependencies are installed:
+
+- Python 3.x
+- Jupyter Notebook
+- Apache Spark
+- Kafka
+- MariaDB
+- SparkML
+- Scikit-learn
+- NumPy
+- Pandas
+
+Please install the necessary dependencies before running the notebook.
+
+## Usage
+
+Follow the steps below to run the Jupyter Notebook and perform tweet segmentation for fake news detection:
+
+1. Clone this repository to your local machine or download the files manually.
+2. Install the required dependencies as mentioned above.
+3. Ensure that Apache Spark and Kafka are properly set up and configured.
+4. Open the `fake_news_detection.ipynb` notebook using Jupyter Notebook.
+5. Run each cell in the notebook sequentially to replicate the model training and tweet segmentation process.
+6. Explore the code, comments, and visualizations to understand the underlying methodology.
+7. Customize and modify the notebook as desired, experimenting with different algorithms, parameters, or feature engineering techniques.
+
+Basic knowledge of machine learning concepts, Apache Spark, and Python programming is recommended to effectively utilize this notebook.
+
+## Conclusion
+
+This project showcases the application of machine learning and big data technologies to segment tweets and identify fake news. By leveraging the Random Forest Classifier, SparkML, Kafka, and MariaDB, we can efficiently process and classify incoming tweets. Feature engineering techniques like tokenization, CountVectorizer, and TF-IDF are employed to transform the raw tweet data into meaningful features.
+
+With further improvements, such as incorporating Word2Vec and exploring other machine learning algorithms, the model's accuracy and performance can be enhanced. Additionally, connecting a BI platform to the MariaDB database can provide comprehensive insights into tweet data and support decision-making processes.
+
+Feel free to explore the notebook, experiment with the code, and adapt it to your specific needs. For any questions or suggestions, please don't hesitate to reach out.
+
+Happy tweet segmentation and fake news detection!
